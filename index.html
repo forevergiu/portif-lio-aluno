@@ -1,140 +1,125 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfólio Profissional</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro em Medicina - Cardiologia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e8ff; /* lilás clarinho */
+            color: #4b0082; /* roxo escuro */
+        }
 
-<style>
-    body{
-        margin:0;
-        font-family: 'Segoe UI', sans-serif;
-        background:#f4f6fb;
-        color:#333;
-    }
+        header {
+            background-color: #b19cd9; /* lilás médio */
+            padding: 30px 20px;
+            text-align: center;
+        }
 
-    header{
-        background:linear-gradient(120deg,#1f3c88,#39a0ed);
-        color:white;
-        padding:60px 20px;
-        text-align:center;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
 
-    header h1{
-        margin:0;
-        font-size:42px;
-    }
+        nav {
+            text-align: center;
+            background-color: #d8bff7; /* lilás suave */
+            padding: 10px;
+        }
 
-    header p{
-        font-size:20px;
-        opacity:0.9;
-    }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4b0082;
+            font-weight: bold;
+        }
 
-    section{
-        padding:50px 20px;
-        max-width:1000px;
-        margin:auto;
-    }
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-    h2{
-        text-align:center;
-        margin-bottom:30px;
-        color:#1f3c88;
-    }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
 
-    .cards{
-        display:flex;
-        flex-wrap:wrap;
-        gap:20px;
-        justify-content:center;
-    }
+        section h2 {
+            color: #6a0dad;
+            text-align: center;
+        }
 
-    .card{
-        background:white;
-        padding:25px;
-        width:280px;
-        border-radius:12px;
-        box-shadow:0 8px 20px rgba(0,0,0,0.08);
-        transition:0.3s;
-    }
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
 
-    .card:hover{
-        transform:translateY(-6px);
-    }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
 
-    .btn{
-        display:inline-block;
-        margin-top:15px;
-        padding:10px 18px;
-        background:#1f3c88;
-        color:white;
-        border-radius:20px;
-        text-decoration:none;
-        font-size:14px;
-    }
+        .images img {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
 
-    footer{
-        background:#1f3c88;
-        color:white;
-        text-align:center;
-        padding:20px;
-        margin-top:40px;
-    }
-</style>
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #b19cd9;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .images img {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Daiane Silva Fonseca</h1>
-    <p>Desenvolvedor(a) | Professora de Sistemas | BACK-end</p>
-</header>
+    <header>
+        <h1>Meu Futuro em Medicina</h1>
+        <p>Paixão pelo cuidado e pela cardiologia</p>
+    </header>
 
-<section>
-    <h2>Amo minha profissão</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-        Sou professora  de desenvolvimento de sistemas, apaixonado(a) por tecnologia,
-        programação e criação de projetos web. Este site reúne meus trabalhos,
-        habilidades e contatos profissionais.
-    </p>
-</section>
+    <nav>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#medicina">Medicina</a>
+        <a href="#imagens">Galeria</a>
+    </nav>
 
-<section>
-    <h2>Projetos</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Projeto 1</h3>
-            <p>Esse projeto é para aprendizagem doa alunos.</p>
-            <a href="#" class="btn">Ver projeto</a>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Desde jovem, sempre admirei o cuidado e a dedicação dos médicos. A forma como se vestem com profissionalismo e o compromisso com a vida humana me inspira profundamente. Decidi que quero seguir a carreira de Medicina, com foco em cardiologia, para poder ajudar as pessoas a manterem seus corações saudáveis e oferecer cuidado humanizado.</p>
+    </section>
+
+    <section id="medicina">
+        <h2>Minha Área de Interesse</h2>
+        <p>A cardiologia me fascina pela complexidade do coração e pelo impacto que um diagnóstico ou tratamento correto pode ter na vida de alguém. Além disso, admiro as habilidades cirúrgicas e o conhecimento que os médicos precisam para atuar com excelência. Quero aprender cada detalhe para me tornar uma médica dedicada e competente.</p>
+    </section>
+
+    <section id="imagens">
+        <h2>Galeria Médica</h2>
+        <div class="images">
+            <img src="https://images.pexels.com/photos/4226216/pexels-photo-4226216.jpeg" alt="Médica cirurgiã">
+            <img src="https://images.pexels.com/photos/3845760/pexels-photo-3845760.jpeg" alt="Exame cardiológico">
+            <img src="https://images.pexels.com/photos/5938737/pexels-photo-5938737.jpeg" alt="Médico em cirurgia">
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Projeto 2</h3>
-            <p>Esse projeto é para interacão dos alunos.</p>
-            <a href="#" class="btn">Ver projeto</a>
-        </div>
-
-        <div class="card">
-            <h3>Projeto 3</h3>
-            <p>Projeto de aprendizagem.</p>
-            <a href="#" class="btn">Ver projeto</a>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>(44)999551506</h2>
-    <p style="text-align:center;">
-        📧 daiane.silva.fonseca@escolapr.gov.br<br>
-        💼 LinkedIn: seu perfil<br>
-        💻 GitHub: daifonseca1989
-    </p>
-</section>
-
-<footer>
-    <p>© 2026 - Daiane Silva Fonseca | Portfólio Profissional</p>
-</footer>
+    <footer>
+        &copy; 2026 Meu Futuro em Medicina
+    </footer>
 
 </body>
 </html>
