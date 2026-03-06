@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teatro: História e Presente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>O Mundo do Teatro</h1>
+    <nav>
+      <ul>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#hoje">Hoje em Dia</a></li>
+        <li><a href="#interativo">Interativo</a></li>
+      </ul>
+    </nav>
+  </header>
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8B0000; /* Fundo Vermelho */
+  color: #FFD700; /* Texto Dourado */
+}
+
+header {
+  background-color: #8B0000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #FFD700;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #8B0000;
+  color: #FFD700;
+}
+
+/* Botão Interativo */
+button {
+  background-color: #FFD700;
+  color: #8B0000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #FFA500;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #FFD700;
+}
+  <section id="historia">
+    <h2>História do Teatro</h2>
+    <p>O teatro é uma forma de expressão artística que remonta à Grécia Antiga, aproximadamente no século V a.C. Durante o período clássico, o teatro era utilizado para homenagear os deuses, especialmente Dionísio, e as representações aconteciam ao ar livre, em grandes anfiteatros. Ao longo dos séculos, o teatro se desenvolveu em várias formas, como a tragédia, a comédia e o drama, influenciando a literatura, a cultura e as artes de diversas civilizações.</p>
+    <p>No Renascimento, o teatro ganhou uma nova perspectiva com dramaturgos como William Shakespeare, cujas obras ainda são encenadas em todo o mundo. O teatro moderno passou a explorar novas técnicas, cenários e formas de interpretação, com destaque para grandes nomes como Anton Tchekhov e Bertolt Brecht.</p>
+  </section>
+
+  <section id="hoje">
+    <h2>O Teatro Hoje</h2>
+    <p>Atualmente, o teatro continua sendo uma das principais formas de arte no mundo, embora enfrente desafios com o avanço das tecnologias de entretenimento, como o cinema e a televisão. No entanto, a experiência ao vivo, a interação com o público e a energia do palco ainda são insubstituíveis. O teatro contemporâneo explora questões sociais, culturais e políticas, usando diferentes estilos e linguagens para se conectar com públicos variados.</p>
+  </section>
+
+  <section id="interativo">
+    <h2>Experimente o Teatro!</h2>
+    <p>Clique no botão abaixo e veja como seria uma cena teatral! (Apenas uma simulação interativa)</p>
+    <button onclick="verCena()">Ver Cena</button>
+    <div id="resultado"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Todos os direitos reservados. Projeto sobre Teatro.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+function verCena() {
+  const cena = [
+    "Cena 1: O palco está iluminado com uma luz dourada suave. Um ator entra e começa a declamar um monólogo dramático sobre a vida e a morte.",
+    "Cena 2: Em uma cena de comédia, dois atores entram no palco, tropeçando e fazendo piadas engraçadas, provocando risadas do público.",
+    "Cena 3: Uma performance experimental com dançarinos e projeções de luz, explorando a interação entre o corpo e o som no teatro moderno."
+  ];
+
+  // Escolher uma cena aleatória
+  const cenaAleatoria = cena[Math.floor(Math.random() * cena.length)];
+  document.getElementById("resultado").innerText = cenaAleatoria;
+}
